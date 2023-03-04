@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="Trusted by millions of investors around the world, StockCharts.com has the award-winning charts, analysis tools and expert commentary you need to invest smarter.">
+    <!-- META KEYWORDS -->
+    <meta name="keywords" content="technical analysis, charts, financial charts, sharpcharts, acp, advanced charting, interactive charting, dynamic chart, interactive stock charts, dynamic stock charts, dynamic financial chart, interactive financial chart, charting platform, point and figure, pnf, yield curve, seasonality, rrg, relative rotation graph, investing, stocks, etfs, stock analysis, trading, stock trading, stock charting, stock chart, stock charts, ETF, ETF chart, ETF charting, momentum, momentum charting, MACD, John Murphy, Martin Pring, Arthur Hill, financial markets">
+    <!-- GOOGLE SITE VERIFICATION -->
+    <meta name="google-site-verification" content="fd_DXuTrc-zWw3BGZqj58TarAPkO6ovT84kgOaXH8dY" />
+    <meta name="google-site-verification" content="8b7hIknxXkCjjcUbOBP11r0xgtp7XZ0xIGKp_ixkehU" />
+    <!-- CONTENT SECURITY POLICY -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; img-src 'self' data: https:; default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none';" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="//d.stockcharts.com/favicon.gif" type="image/gif" />
+
+    <title>StockAnalysis | Advanced Financial Charts &amp; Technical Analysis Tools</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="//d.stockcharts.com/vendor/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- GOOGLE FONTS -->
+    <link href="//d.stockcharts.com/css/google-fonts.css" rel="stylesheet" type="text/css" />
+    <!-- SCC CSS -->
+    <link href="//d.stockcharts.com/css/lib/scc-icons-square.css" rel="stylesheet" type="text/css" />
+    <link href="//d.stockcharts.com/css/scc-universal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//d.stockcharts.com/css/landing.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- FONT AWESOME -->
+    <link href="//d.stockcharts.com/font-awesome/css/all.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- JQUERY -->
+    <script src="//d.stockcharts.com/vendor/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <!-- JQUERY EASING -->
+    <script src="//d.stockcharts.com/vendor/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="//d.stockcharts.com/vendor/bootstrap/3.4.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- SCC JS -->
+    <script src="//d.stockcharts.com/js/scc-universal-v2.js" type="text/javascript"></script>
+
+    <script>
+      $(function() {
+        retrieveNotifications('homepage');
+      });
+    </script>
+
+    <!-- CUSTOM STYLES -->
+    <style>
+      #scc-navbar #nav-siteSearch #nav-siteSearch-icon:after { font-family:'Font Awesome 5 Pro',FontAwesome; content:"\f002"; font-weight:900; width:1.28571429em; }
+      #scc-navbar #nav-siteSearch.nav-siteSearch-open #nav-siteSearch-icon:after { font-family:'Font Awesome 5 Pro',FontAwesome; content:"\f00d"; font-weight:900; width:1.28571429em; }
+      /* ------- */
+      /* GENERAL */
+      /* ------- */
+      .img-col img { width:100%; max-width:100%; }
+      .partnership-logo { max-width:375px; margin:0 auto 30px auto; padding:11px 20px 15px 20px; background-color:#f2f5f7; border-radius:2px; text-align:center; }
+      .partnership-logo img { width:100%; max-width:100%; margin:0 auto; }
+      i.inline-icon-blue { color: #0f4d8a; font-size: 35px; margin: 12px 0px; }
+
+      /* ------ */
+      /* HEADER */
+      /* ------ */
+      #header { background-color:#fbfcfe; overflow-y:hidden !important; padding:60px 0 330px; }
+      #header.bg-dark { background-color:#243342; }
+      #header.bg-dark.gradient {
+        background:#243342; /* For browsers that do not support gradients */
+        background:-webkit-linear-gradient(to right, rgba(45,64,82,1), rgba(18,26,33,1)); /* For Safari 5.1 to 6.0 */
+        background:-o-radial-linear-gradient(to right, rgba(45,64,82,1), rgba(18,26,33,1)); /* For Opera 11.1 to 12.0 */
+        background:-moz-linear-gradient(to right, rgba(45,64,82,1), rgba(18,26,33,1)); /* For Firefox 3.6 to 15 */
+        background:linear-gradient(to bottom right, rgba(45,64,82,1), rgba(18,26,33,1)); /* Standard syntax */
+      }
+      #header .bg-header-01 {
+        z-index:-1;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background:url(//d.stockcharts.com/img/bg-chart-graphic-01.jpg) no-repeat center center scroll;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        background-size:cover;
+        -o-background-size:cover;
+        opacity:0.10;
+        width:100%;
+        height:100%;
+      }
+      #header h3.sec-headline { margin-bottom:30px; font-size:16px; }
+      #header h1.header-title { margin:0 auto 30px auto; font-size:60px; color:#f2f5f7; }
+      #header h1.header-title span { font-weight:900; color:#f8d23a; /*color:#36e27e; color:#1282f3;*/ }
+      #header p.info { max-width:705px; font-size:18px; color:#e2e5e9; }
+      /* SAMPLE CHARTS */
+      #header-sampleCharts { margin-bottom:-15px; }
+      /* HEADER MEDIA QUERIES */
+      @media (max-width:991px) {
+        #header {padding-bottom:270px;}
+        #header h3.sec-headline {font-size:14px;}
+        #header h1.header-title {font-size:45px;}
+        #header p.info {max-width:555px; font-size:16px;}
+      }
+      @media(max-width:767px) {
+        #header {padding-top:30px; padding-bottom:150px;}
+        #header h3.sec-headline {display:none;}
+        #header h1.header-title {max-width:425px; font-size:40px;}
+        #header-sampleCharts { margin-bottom:-10px; }
+      }
+
+      /* --------------- */
+      /* PRODUCT FEATURE */
+      /* --------------- */
+      #productFeature { padding:0; }
+      #productFeature .img-col { margin-top:-300px; }
+      /* PRODUCT FEATURE MEDIA QUERIES */
+      @media (max-width:991px) {
+        #productFeature .img-col {margin-top:-240px;}
+      }
+      @media(max-width:767px) {
+        #productFeature .img-col {margin-top:-120px;}
+      }
+
+      /* ----------- */
+      /* SCROLL TABS */
+      /* ----------- */
+      #scrollTabs { background-color:#f2f5f7; }
+      @media (max-width:767px) {
+        #scrollTabs {text-align:center;}
+      }
+      /* ---------------- */
+      /* CONTENT SECTIONS */
+      /* ---------------- */
+      #introducingACP .highlight-col { text-align:center; }
+      #introducingACP h2.sec-title { max-width:991px; }
+      #introducingACP .highlight-col h4.sec-subtitle { font-family:'Roboto Condensed','Lato','Helvetica Neue',Helvetica,Arial,sans-serif; font-size:22px; font-weight:900; color:#383f47; }
+      @media (max-width:991px) {
+        #intro .img-col-halfright {padding-top:45px;}
+        #intro .vid-bound {max-width:500px;}
+        #introducingACP .img-col {padding:30px 0;}
+        #introducingACP .img-col img {max-width:450px; margin:0 auto;}
+      }
+      @media (max-width:767px) {
+        #intro {padding-bottom:15px;}
+        #intro .img-col-halfright {padding-top:30px;}
+        #intro .vid-bound {max-width:500px;}
+        #section02 .img-col,
+        #section03 .img-col {display:none;}
+        #mobileImageFeature .img-col img {max-width:450px;}
+      }
+   
+      /* PRICING MEDIA QUERIES */
+      @media (max-width:991px) {
+        #pricing #serviceLevelCards .service-col {padding:0 7px;}
+        #pricing #serviceLevelCards .service-title {font-size:35px;}
+        #pricing #serviceLevelCards .service-price h3 {font-size:25px;}
+      }
+      @media (max-width:767px) {
+        #pricing #pricingToggles button.renewal-period {width:120px;}
+        #pricing #serviceLevelCards .service-col {margin-top:15px; padding:0 15px;}
+        #pricing #serviceLevelCards .service-col-top {margin-top:0;}
+        #pricing #serviceLevelCards .service-wrap {max-width:400px; margin:0 auto;}
+      }
+      
+        select {
+            width: 550px;
+            margin: 10px;
+            size:5;
+            border-radius: 12px;
+            height: 35px;
+        }
+        select:focus {
+            min-width: 250px;
+            width: 550;
+        }
+   
+      
+    </style>
+  </head>
+  <body id="page-top">
+
+    <ul id="notification-banners"></ul>
+
+    <!-- SCC NAVBAR -->
+    <nav id="scc-navbar" class="navbar navbar-inverse navbar-blue navbar-static-top">
+      <div class="container-fluid">
+        <!-- NAV UPPER -->
+        <div id="nav-upper" class="row">
+          <!-- NAVBAR BRAND -->
+          <a href="/" class="navbar-brand">
+            <img src="//d.stockcharts.com/img/scc-logo-light.png" alt="StocAnalysis Logo" class="navbar-logo" />
+            <img src="//d.stockcharts.com/img/scc-logo-icon.png" alt="StockAnalysis Icon" class="navbar-logo logo-icon" />
+          </a>
+          <!-- MENU TOGGLE -->
+          <div id="nav-menuToggle" class="nav navbar-nav">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menuCollapse"
+              aria-expanded="false" aria-controls="navbar-menuCollapse" aria-label="Toggle Website Navigation Menu"><i class="fas fa-bars"></i></button>
+          </div>
+          <!-- ACCOUNT LINKS -->
+          <ul id="nav-accountLinks" class="nav navbar-nav">
+
+            <li id="nav-userProfile" class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-fw fa-user-circle"></i><span id="nav-userID">Welcome</span><i
+                  class="far fa-fw fa-angle-down"></i>
+              </a>
+              <ul id="nav-userMenu" class="dropdown-menu">
+                <li><a href="/def/servlet/Favorites.CServlet#chartlists"><i class="fas fa-fw fa-user-chart"></i>&nbsp;&nbsp;Your
+                  ChartLists</a></li>
+                <li><a href="/def/servlet/ScanUI"><i class="fal fa-fw fa-sliders-h"></i>&nbsp;&nbsp;Your Scans</a></li>
+                <li><a href="/h-mem/useralertsummary.html"><i class="far fa-fw fa-bell"></i>&nbsp;&nbsp;Your Alerts</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/youracct"><i class="fas fa-fw fa-cogs"></i>&nbsp;&nbsp;Your Account</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="//support.stockcharts.com"><i class="fas fa-fw fa-question-circle"></i>&nbsp;&nbsp;Support
+                  Center</a></li>
+                <li><a href="/support/techsupport.html"><i class="far fa-fw fa-envelope"></i>&nbsp;&nbsp;Contact Us</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/logout"><i class="fas fa-fw fa-sign-out-alt"></i>&nbsp;&nbsp;Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        
+        
+        
+          <center>
+            
+        </head>
+        <body>
+            <form>
+                <select>
+                    <option>Choose</option>
+                    <option>This option is large</option>
+                    <option>This option is very large</option>
+                    <option>This option is very very large</option>
+                    <option>This option is very very very large</option>
+                </select>
+            </form>
+            
+          
+          
+        </div>
+        <!-- end of NAV UPPER -->
+        <!-- NAV LOWER -->
+        <div id="nav-lower">
+          <!-- MENU COLLAPSE -->
+          <div id="navbar-menuCollapse" class="navbar-collapse collapse">
+          
+            <div id="nav-siteSearch-wrap">
+              <form id="nav-siteSearch" role="search" action="/search/">
+                <input type="search" id="nav-siteSearch-input" placeholder="Search StockCharts" name="q" required aria-label="Search StockCharts" />
+                <input type="submit" id="nav-siteSearch-submit" value="Go" />
+                <span id="nav-siteSearch-icon"></span>
+              </form>
+            </div>
+          </div><!-- end of MENU COLLAPSE -->
+        </div><!-- end of NAV LOWER -->
+      </div>
+    </nav><!-- end of SCC NAVBAR -->
+
+    <!-- PAGEBODY -->
+    <div id="pagebody">
+      <!-- PAGECONTENTS -->
+      <div id="pagecontents">
+
+        <!-- HEADER -->
+        <header id="header" class="section bg-dark gradient">
+          <div class="container">
+            <div class="bg-header-01"></div>
+            <div class="row">
+              <div class="col-xs-12 text-col text-center">
+                <h3 class="sec-headline">TECHNICAL&nbsp;TOOLS&emsp;|&emsp;SCANNING&emsp;|&emsp;ALERTS&emsp;|&emsp;EXPERT&nbsp;COMMENTARY</h3>
+                <h1 class="header-title">
+                  Better&nbsp;Charting. <span>Smarter&nbsp;Investing.</span>
+                </h1>
+                <p class="info info-margin-30">
+                  StockAnalysis delivers the charts, tools and resources you need to succeed in the markets.
+                  As the industry's most trusted technical analysis platform for more than two decades, we're here to help you take control of your&nbsp;investing.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- end of HEADER -->
+
+        
+
+        <!-- INTRO -->
+        <div id="intro" class="section sec-lg bg-white clearfix">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-xs-12 text-col vcenter">
+                <center><h3 class="sec-headline">WHY STOCK Analysis</h3>
+                <h2 class="sec-title">
+                  Investing is hard.
+                  <br />
+                  We make it <span>easier.</span>
+                </h2>
+                <hr class="line-thick line-50" />
+                <h4 class="sec-subtitle">See the markets more clearly, improve your portfolio management, and find promising new opportunities faster than ever before.</h4>
+                <p class="info">
+                  Trusted by thousands of online investors across the globe, StockCharts makes it easy to create the web's highest-quality financial charts in just a few simple&nbsp;clicks.
+                </p>
+                <p class="info info-margin-0">
+                  Create bigger, better, more advanced charts and save them to your account.
+                  Run custom scans to find new trades or investments, and set automatic alerts for your unique technical criteria.
+                  Plus, with daily market commentary from industry-leading technicians, you can follow the experts and see the latest charts they're&nbsp;watching.
+                </p></center>
+              </div>
+              <div class="col-md-6 col-xs-12 img-col img-col-halfright vcenter">
+                <!-- IMAGE BOUND -->
+                <div class="vid-bound">
+                  <div class="embed-responsive embed-responsive-16by9">
+                
+                    <iframe width="560" height="315" class="embed-responsive-item" src="https://www.youtube.com/embed/DrX7-8ekQGY" title="YouTube" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div><!-- end of IMAGE BOUND -->
+            </div></div></div></div>
+           --
+               
+
+        
+        <!-- INTRODUCING ACP -->
+        <div id="introducingACP" class="section sec-lg bg-lightgrey">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-col text-center">
+                <h3 class="sec-headline">Introducing StocAnalysisACP</h3>
+                <h2 class="sec-title">
+                  The web's most advanced, <span>interactive</span> financial charting platform, designed to <span>transform</span> the way you see the&nbsp;markets.
+                </h2>
+                <hr class="line-thick line-grey line-center line-50" />
+              </div>
+              <div class="col-lg-6 col-md-4 col-xs-12 img-col img-col-halfleft vcenter">
+                <img src="//d.stockcharts.com/img/acp-tickercloud.png" alt="StockChartsACP Advanced Charting Platform" />
+              </div><!--
+           --><div class="col-lg-6 col-md-8 col-xs-12 text-col vcenter">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-12 highlight-col">
+                      <h4 class="sec-subtitle">
+                        <i class="fal fa-fw fa-user-chart inline-icon-blue" aria-hidden="true"></i>
+                        <br />
+                        Ultra Dynamic
+                      </h4>
+                      <p class="info info-margin-30">
+                        ACP is designed to redefine the way that you chart and analyze the financial markets, with more technical tools and capabilities than ever&nbsp;before. 
+                      </p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 highlight-col">
+                      <h4 class="sec-subtitle">
+                        <i class="fal fa-fw fa-hand-pointer inline-icon-blue" aria-hidden="true"></i>
+                        <br />
+                        Highly Interactive
+                      </h4>
+                      <p class="info info-margin-30">
+                        Engage with the markets and your portfolio in entirely new ways with a highly-interactive charting experience that knows no&nbsp;bounds.
+                      </p>
+                    </div>
+                    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
+                    <div class="col-sm-6 col-xs-12 highlight-col">
+                      <h4 class="sec-subtitle">
+                        <i class="fal fa-fw fa-expand-arrows-alt inline-icon-blue" aria-hidden="true"></i>
+                        <br />
+                        Insanely Flexible
+                      </h4>
+                      <p class="info info-margin-30">
+                        Every investor has different needs and ACP is designed to support them all, with a wide array of technical indicators and overlays, customizable multi-chart layouts, additional data views and much&nbsp;more.
+                      </p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 highlight-col">
+                      <h4 class="sec-subtitle">
+                        <i class="fal fa-fw fa-rocket inline-icon-blue" aria-hidden="true"></i>
+                        <br />
+                        Remarkably Powerful
+                      </h4>
+                      <p class="info info-margin-30">
+                        ACP brings you the web's most advanced technical charting platform, seamlessly integrated with the rest of the StockCharts feature set to create an unrivaled analysis and portfolio management&nbsp;toolkit.
+                      </p>
+                    </div>
+                    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"></div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of INTRODUCING ACP -->
+
+        <!-- SECTION 02 -->
+        <div id="section02" class="section sec-lg bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 img-col img-col-halfleft vcenter">
+                <img src="//d.stockcharts.com/img/scc-feature-homepage-01.jpg" alt="StockCharts Mobile Feature" />
+              </div><!--
+           --><div class="col-sm-6 col-xs-12 text-col vcenter">
+                <h3 class="sec-headline">ALL AT YOUR FINGERTIPS</h3>
+                <h2 class="sec-title">
+                  Real-time charting, <span>wherever&nbsp;you&nbsp;go.</span>
+                </h2>
+                <hr class="line-thick line-50" />
+                <h4 class="sec-subtitle">
+                  The markets won't stop because you're away from your desk.
+                  You need a real-time charting platform that goes where you go - anywhere, anytime, on&nbsp;any&nbsp;device.
+                </h4>
+                <p class="info info-margin-0">
+                  Built for the modern investor, StockCharts puts the industry's best technical tools and resources at your fingertips, with no software to install or frustrating compatibility issues.
+                  Whether you're on a desktop, laptop, smartphone or tablet, access everything in your account seamlessly from any&nbsp;web-enabled&nbsp;device.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of SECTION 02 -->
+
+        
+        <!-- SECTION 03 -->
+        <div id="section03" class="section sec-lg bg-white">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-xs-12 text-col vcenter">
+                <h3 class="sec-headline">DESIGNED TO DO MORE</h3>
+                <h2 class="sec-title">
+                  A <span>complete toolkit</span> for every stage of your investing process.
+                </h2>
+                <hr class="line-thick line-50" />
+                <p class="info">
+                  Whether you’re an active trader or simply managing your retirement accounts, StockCharts has everything you need to plan, organize and execute any investing system.
+                  Our comprehensive feature set is designed to provide you with a complete analysis and portfolio management toolkit.
+                </p>
+                <ul class="info">
+                  <li><i class="fas fa-arrow-circle-right info-list-icon"></i>Discover the market's most promising new opportunities with our advanced scanning&nbsp;tools.</li>
+                  <li><i class="fas fa-arrow-circle-right info-list-icon"></i>Pinpoint the perfect entry with our award-winning charting and annotation&nbsp;tools.</li>
+                  <li><i class="fas fa-arrow-circle-right info-list-icon"></i>Monitor your open positions and track your portfolios with&nbsp;ChartLists.</li>
+                  <li><i class="fas fa-arrow-circle-right info-list-icon"></i>And when it comes time to sell, our custom technical alerts will help you time your exits like&nbsp;a&nbsp;pro.</li>
+                </ul>
+                
+              </div><!--
+           --><div class="col-sm-6 col-xs-12 img-col img-col-halfright vcenter">
+                <img src="//d.stockcharts.com/img/scc-feature-homepage-02.jpg"  />
+              </div>
+            </div>
+          </div>
+        </div><!-- end of SECTION 03 -->
+   
+
+
+
+        
+
+        
+  </body>
+</html>
